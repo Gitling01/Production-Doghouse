@@ -1,0 +1,456 @@
+body {
+    cursor: url('images/icons8-cat-footprint-24.png'), auto;
+}
+/**** LISTING SECTION ****/
+.nav-bar{ 
+    display: flex;
+    padding: 8px 16px;
+}
+.nav-bar ul{
+    width: auto;
+    /* border: 1px solid black; */
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-bar a{
+    /* border: 1px solid black; */
+    display: block;
+    color: black;
+    padding: 8px;
+    float: left;
+    text-decoration: none;
+}
+.nav-bar h2{
+    /* border: 1px solid black; */
+    display: block;
+    color: black;
+    padding-left: 48px;
+    float: right;
+    text-decoration: none;
+}
+#add-listing-button{
+    border: 0;
+    border-radius: 100px;
+    font-size: 16px;
+    font-weight: 600;
+    max-width: 480px;
+    min-height: 40px;
+    padding: 0px 20px;
+    background-color: rgb(40, 115, 220);;
+    color: #ffffff;
+    cursor: pointer;
+}
+#hero-section{
+    display: flex;
+    height: 80vh;
+    width: 100vw;
+    margin: 0px 16px 64px;
+}
+#hero-section-left-content{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center; 
+}
+#hero-section-left-content h1{
+    font-size: 38px;
+    justify-items: center;
+}
+.search-object{
+    display: flex;
+    align-items: center;
+}
+#search-bar{
+    margin-top: 8px;
+    margin-left: auto;
+    justify-content: center;
+    width: 300px;
+    height: 24px;
+}
+#search-button{
+    margin-top: 8px;
+    margin-right: auto;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+#hero-section-right-content {
+    flex: 1;
+}
+#hero-section-right-content img{
+    height: 100%;
+    width: auto;
+}
+.row{
+    display: flex;
+    align-items: center;
+}
+.single-column{
+    display: flex;
+    flex-direction: column;
+}
+#listing-container-description{
+    text-align: center;    
+}
+.main-listing-container{
+    display: flex;
+    flex-direction: column;
+}
+.listing-row-container{
+    width: 70%;
+    margin: 24px auto; /*centered*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 24px;
+}
+.listing{
+    flex: 0 0 calc(33.3% - 16px);
+    max-width: 0 0 calc(33.3% - 16px);
+    box-sizing: border-box;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius: 2%;
+    padding-left: 14px;
+    padding-right: 14px;
+    cursor: pointer;
+}
+.favorite-icon{
+    border: 2px solid white;
+    border-radius: 50%;
+    background-color: #ffffff;
+    padding: 3px;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    top: 10px;
+    right: 10px;
+}
+.listing-text{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.listing-text p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.listing-text h3{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/**.listing-details{
+}**/
+
+.icon{
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+}
+.property-image{
+    border-radius: 2%;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.pagination{
+    text-align: center;
+    justify-items: end;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+.pagination a{
+    display: inline-block;
+    border: 1px solid black;
+    color: black;
+    text-decoration: none;
+    padding: 8px 15px;
+}
+.pagination a.active{
+    background-color: #ffd700;
+}
+
+/**** WAVE HEADER 
+.wave-header{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+}
+svg{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}****/
+
+/**** RESOURCES SECTION ****/
+.two-column-container{
+    display: flex;
+}
+#resources-title-div{
+    display: flex;
+    flex: 10%;
+    padding: 8px;
+}
+.handout-container{
+    display: flex;
+    flex: 50%;
+    padding: 16px;
+}
+.handout-link-section{
+    display: flex;
+    border: 1px solid black;
+    margin: 16px;
+}
+.title{
+    display: flex;
+    margin: 10px auto;
+    padding-top: 24px;
+    padding-bottom: 50px;
+    align-items: center; 
+    justify-content: center; 
+}
+#resources-title{
+    writing-mode: vertical-lr;
+    text-orientation: sideways;
+    padding-left: 16px;
+    font-size: 10vw;
+}
+/**** LOGIN PAGE ****/
+.centered-text{
+    text-align: center;
+    margin: 0px auto;
+}
+.single-item-container{
+    display: flex;
+    margin: 25px auto;
+}
+#login-submit-button{
+    height: auto;
+    width: 300px;
+    margin: 42px 16px 16px;
+    padding: 8px 0px 8px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 2px;
+    color: black;
+    background-color: white;
+    border: 1px solid rgb(109, 109, 109);
+    cursor: pointer;
+}
+#facebook-login-button{
+    height: auto;
+    width: 300px;
+    font-size: 16px;
+    padding: 8px 0px 8px;
+    text-align: center;
+    border-radius: 2px;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(53, 39, 243);
+    border: 1px solid rgb(53, 39, 243);
+    cursor: pointer;
+}
+/** login form **/
+#login-heading{
+    margin-bottom: 20px;
+    color: rgb(41, 40, 40)
+}
+#login-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 100px 150px 120px;
+    margin: 10vh auto;
+    width: 25%;
+    height: 100px;
+    font-size: 16px;
+    background-color: rgb(239, 244, 247);
+}
+#login-form input {
+    margin: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    width: 300px;
+    height: 30px;
+    font-size: 14px;
+}
+/**register form**/
+#register-heading{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+#register-form{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(96, 162, 255);
+    padding: 100px;
+    margin: 10px auto;
+    width: 25%;
+    height: 100px;
+    background-color: rgb(96, 162, 255);
+}
+
+/**switching**/
+#register-body{
+    display: none;
+}
+#login-body{
+    display: block;
+}
+#register-link{
+    color:blue;
+    text-decoration-line: underline;
+    cursor: pointer;
+}
+#login-link{
+    color:blue;
+    text-decoration-line: underline;
+    cursor: pointer;
+}
+
+/**** LISTING FORM PAGE ****/
+.add-a-listing-page-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#add-a-listing-title{
+    text-align: center;
+}
+.listing-form-container{
+    display: flex;
+    background-color: rgb(96, 162, 255);
+    border-radius: 2%;
+    padding: 16px;
+    margin: 32px auto;
+    justify-content: center;
+    align-items: center;
+}
+.form-group{
+    display: flex;
+    margin: 16px auto;
+    justify-content: right;
+    align-items: center;
+    width: 400px;
+}
+.input-field{
+    margin-left: 8px;
+    width: 200px;
+}
+#submit-listing-button{
+    width: 400px;
+    padding: 8px;
+    margin: 16px auto;
+}
+/***Listing Details Page ***/
+#listing-display-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+    padding: 32px;
+}
+#listing-details-page-address-title{
+    margin: 16px auto;
+}
+#listing-display-container p{
+    margin:8px auto;
+}
+#listing-display-container img{
+    height: 30%;
+    width: 30%;
+}
+#delete-listing-button{
+    margin: 16px;
+    padding: 8px;
+    border-radius: 5%;
+}
+
+/**Account page**/
+#user-info-container{
+    text-align: center;
+}
+#user-info-container h3{
+    margin: 0px;
+}
+#user-items-container{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+#user-items-container h4{
+    margin: 0px;
+    padding-left: 38px;
+}
+#user-image{
+    margin-top: 16px;
+    object-fit: cover;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+/*set dynamically in setAccountPage - for user's active listings*/
+.user-listings-list{
+    margin: 0px;
+    padding: 0px;
+}
+.user-listings-container{
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    margin: 0px;
+}
+.user-listings-container p{
+   padding-right: 16px;
+   text-decoration: none;
+}
+.user-listings-container a{
+    text-decoration: underline;
+    padding-right: 16px;
+    cursor: pointer;
+ }
+
+/**BETA TESTING HOMEPAGE OVERLAY**/
+  dialog {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 500px;
+    padding: 20px + 10px;
+    position: relative;
+  }
+  dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  /* Close button */
+  #close-dialog {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  #dialog-image {
+    max-width: 10%;
+    max-height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  /*MailChimp form*/
+  #mc_embed_signup{
+    max-width: 100%;
+    padding: 10px;
+  }
+ 

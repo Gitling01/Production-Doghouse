@@ -1,0 +1,113 @@
+10/22/2024:
+1- The registration is fully working (can register a user via the site into db)
+2- The ability to add listings is fully working (can add a listing via the
+site into the database)
+3- WIP: The login is being worked on (the main server side logic is fully working -- to print "logged in" 
+   to the console)(the client side route still needs to be added but login works via Insomnia)
+   I still want to check that I am handling errors for all needed cases.
+4- WIP: Stuff related to sessions is currently being added (session.js and server.js are being modified)
+
+10/28/2024:
+1- The session management backend (requiring login upon clicking the listing-form.html link) is working 
+in Insomnia, but the client-side code has a bug (not working as expected when deployed)
+2- Added a simple listing details page UI (everything hard coded so far) just listing-details.html and css  
+3- The GET /listings route in server.js has been modified to take an optional listing_id parameter in the url
+and is fully working in Insomnia. 
+4- I have created a click listener for the listing views and added info about the listing_id into the 
+listing container DOM elements. The click listener has logic that takes the user to the listing-details.html 
+page.
+5- I added a function that renders the listing-details page based on data in localStorage and also 
+put a click listener on the dom content loaded for the listing-details page so the rendering function is 
+called
+
+11/4/2024
+RELATED TO SESSION MANAGEMENT AND AUTHENTICATION:
+*Added credentials: 'include' in index.js functions loginUser and checkAuthentication
+*Modified settings in server.js - cors uses origin: 'http://127.0.0.1:5501' and credentials: true.
+*Modified settings in session in cookies - secure: true, httpOnly: true, sameSite: 'none'.
+Newest browser error: "TypeError: a.default.detectStore(...) is undefined"
+---
+1- Positioned and styled the Add a Listing button (pushed it)
+2- Added the ability to delete a listing (using the Delete button on the listing-details page)(pushed it)
+(3- Added column "rental type" to the database listing table in MySQL Workbench)
+
+11/7/2024
+1- Added https configuration
+
+11/8/2024
+1- WIP: Adding ability to search in search bar by ()rental type, ()city but just as a backend endpoint 
+2- "Protected" route for add-listing is now working and session cookies are displayed in browser (pushed)
+3- WIP: Creating an account page with the user's creating listings shown (need to attach a user id 
+to each listing)
+
+11/19/2024
+1- Account page now shows correct username, photo and listings based on session.userId
+2- Moved delete button to the account page and modified the deleteListing method to take in listingId directly
+3- TODO: add feedback to user that the listing has been deleted
+
+11/22/2024
+1- Changed login and registration form to have type=password for privacy
+2- Added star icon to listings 
+3- Created GET route for getting favorites 
+4- Changed session.userId to be the user_id instead of username, and modified functions using session.user_id
+to take that into account
+5- Set up favorites display in setAccountPage
+6- Added ability to add an entry into the favorites table in the db when a user clicks on a listing's star 
+button (and change the pic to filled-star)
+7- Added icons8 link for favorites star
+8- TODO: have the favorite listings be links to that listing's listing details page
+
+11/29/2024
+1- Modified GET /listings route to take more parameters
+2- Changed index.html to make the search-button trigger a pointer cursor
+3- Created an on click listener for the search-button which will utilize the input value
+4- Created a searchListings function which uses getListingData, and a helper function called 
+hideUnusedListings
+5- Adjusted CSS so that even single listings render from left to right, and in index.html 
+removed the little corgi icon (for now) 
+
+11/30/2024
+1- Created a hero section
+
+12/1/2024
+1- Fixed duplicate click listener issues with saving favorites
+2- TODO: Make sure star icons always reflect db
+
+[SAVE POINT]
+
+12/3/2024
+1- Improved redirects for better user experience
+2- TODO: Add minimum length password requirements using express-validator
+3- TODO: add registration confirmation 
+4- Added password minimum of 8 and required it on html5 form
+
+12/4/2024
+1- WIP: Adding facebook login stuff: need to map FB user id to user id in database (maybe email, will need
+to set up access). Plan: have FB logged in response set session.userId using a specific backend route 
+(maybe can even just modify POST /set-return-url to be more generic and set the userId)
+
+12/6/2024
+1- Changed login form styling in CSS and added a facebook login button
+
+12/19/2024
+DEBUGGING SERIALIZING: THINGS TO CHECK
+1) user.id
+2) id
+3) const userId = result.insertId
+4) credentials[0].user_id
+
+----------------
+GITHUB COMMIT NOTES SECTION 
+1/6/2025
+
+Set up database & change password *** [x]
+Fix photo display*** []
+Fix Register Form CSS
+
+(Comment out listing display and write "No matching listings found")
+Comment out Account page [x], 
+  then Add Listing [] and SignUp [] links 
+  and make an overlay that says "Feature currently disabled"
+
+Added aboutus.html and wrote Coming Soon then added link to index.html [x]
+Security for: resource link section, listing display photos, and search bar, plus overall site []

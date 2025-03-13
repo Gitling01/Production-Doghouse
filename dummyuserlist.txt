@@ -1,0 +1,3 @@
+username: sophiethegreat, password: pw123, email: woof@gmail.com
+username: johnc, password: pass123, email: corgitime@gmail.com
+username: olivibee, password: secretpw, email: poodlelife@gmail.com

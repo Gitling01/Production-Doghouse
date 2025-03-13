@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doghouse</title>
+    <link rel="stylesheet" type="text/css" href="styles.css?v1.1"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="index.js?v1.1"></script>
+
+    <!--MailChimp newsletter styling-->
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+        #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width: 600px;}
+        /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+           We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+    </style>
+</head>
+<body>
+
+    <dialog id="site-intro-dialog">
+        <button id="close-dialog">&times;</button>
+
+        <p> <h3>Welcome to the Doghouse Community!</h3>
+           
+            This site is in beta testing, meaning you are a super early-adopter (yay you!). Thus certain features are currently disabled.
+            Please feel free to browse existing housing listings, look around or use the dog-friendly businesses address search tool. 
+            <br><br>
+            Sign up for the newsletter to get updated on new developments and features. If you'd like to support us, you can make an one-time donation on Buy Me a Coffee (or sign up there as a regular supporter). 
+            To learn more about what we do, please check out the About Us section.
+            <br><br>
+            If you'd like to have your own listing/s added, or have any other inquiries, email us at thedoghousecommunity@gmail.com
+            <br><br>
+            <p>XOXO, <br> Team Doghouse</p> <img id="dialog-image" src="images/kissprintnobackground.png" alt="Optional Image">
+            
+        </p>
+
+        <!--Copy-pasted boilerplate code provided by MailChimp (html, javascript and css kept together)-->
+        <div id="mc_embed_shell">
+            
+            <div id="mc_embed_signup">
+                <form action="https://doghousecommunity.us14.list-manage.com/subscribe/post?u=9fdd123ef2fa679b6fe1fe454&amp;id=f4d08ad135&amp;f_id=005cb7e5f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+                    <div id="mc_embed_signup_scroll"><h2>Subscribe</h2>
+                        <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+                        <div class="mc-field-group"><label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label><input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value=""></div><div class="mc-field-group"><label for="mce-FNAME">First Name </label><input type="text" name="FNAME" class=" text" id="mce-FNAME" value=""></div>
+                        <div id="mce-responses" class="clear foot">
+                            <div class="response" id="mce-error-response" style="display: none;"></div>
+                            <div class="response" id="mce-success-response" style="display: none;"></div>
+                        </div>
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                            /* real people should not fill this in and expect good things - do not remove this or risk form bot signups */
+                            <input type="text" name="b_9fdd123ef2fa679b6fe1fe454_f4d08ad135" tabindex="-1" value="">
+                        </div>
+                        <div class="optionalParent">
+                            <div class="clear foot">
+                            <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe">
+                            <p style="margin: 0px auto;"><a href="http://eepurl.com/i7hvfs" title="Mailchimp - email marketing made easy and fun"><span style="display: inline-block; background-color: transparent; border-radius: 4px;"><img class="refferal_badge" src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg" alt="Intuit Mailchimp" style="width: 220px; height: 40px; display: flex; padding: 2px 0px; justify-content: center; align-items: center;"></span></a></p>
+                            </div>
+                        </div>
+                    </div>
+               </form>
+            </div>
+
+            <!--MailChimp newsletter JavaScript snippet-->
+            <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';fnames[6]='COMPANY';ftypes[6]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+        </div>
+      
+    </dialog>
+
+<div class="page-container">
+
+    <div class="container">
+        <div class="nav-bar">
+            <ul>
+                <li><button id="add-listing-button">Add a Listing</button></li> 
+                <li><a href="login.html">Sign Up/Login</a></li> 
+                <li><a href="#resources-title">Resources</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="account.html" id="account-page-link">Account</a></li>
+                <li><h2>Doghouse</h2></li>
+              </ul> 
+                
+            </div>
+        </div>
+
+        <div id="hero-section">
+                <div id="hero-section-left-content">
+                    <h1>Rent a dog-friendly apartment, room or couch near you</h1>
+                    <div class="search-object">
+                        <input id="search-bar" type="text" placeholder="Search by city, borough, zipcode or rental type">
+                        <img id="search-button" src="images\icons8-magnifying-glass-30.png">
+                    </div>
+                </div>   
+
+                 <div id="hero-section-right-content">
+                    <img src="/images/cartoon-dog.png" alt="image of cartoon dog">
+                 </div>
+        </div>
+
+        <div class="single-column">
+            
+                <!-- <h4 id="listing-container-description">Dog Friendly Apartment Rentals Near You</h4>  -->
+            <div id="start-of-listings" class="row">
+              
+                <div class="listing-row-container">
+
+                    <div class="listing">
+                        <img class="favorite-icon" src="/images/empty-star-icon.png" alt="empty star">
+                        <div class="listing-text"> 
+                            <img class="property-image" src="images/propertyphoto1.jpeg" alt="">
+                            <h3 class="street-address"></h3>
+                            <p class="price"></p>
+                            <p class="bedroom-quantity"></p>
+                            <p class="bathroom-quantity"></p>
+                            <p class="size"></p>
+                        </div>
+                    </div>
+
+                    <div class="listing">
+                        <img class="favorite-icon" src="/images/empty-star-icon.png" alt="empty star">
+                        <div class="listing-text">
+                            <img class="property-image" src="images/propertyphoto2.jpeg" alt="">
+                            <h3 class="street-address"></h3>
+                            <p class="price"></p>
+                            <p class="bedroom-quantity"></p>
+                            <p class="bathroom-quantity"></p>
+                            <p class="size"></p>
+                        </div>
+                    </div>
+
+                    <div class="listing">
+                        <img class="favorite-icon" src="/images/empty-star-icon.png" alt="empty star">
+                        <div class="listing-text">
+                            <img class="property-image" src="images/propertyphoto3.jpeg" alt="">
+                            <h3 class="street-address"></h3>
+                            <p class="price"></p>
+                            <p class="bedroom-quantity"></p>
+                            <p class="bathroom-quantity"></p>
+                            <p class="size"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="listing-row-container">
+            
+                    <div class="listing">
+                        <img class="favorite-icon" src="/images/empty-star-icon.png" alt="empty star">
+                        <div class="listing-text">
+                            <img class="property-image" src="images/propertyphoto1.jpeg" alt="">
+                            <h3 class="street-address"></h3>
+                            <p class="price"></p>
+                            <p class="bedroom-quantity"></p>
+                            <p class="bathroom-quantity"></p>
+                            <p class="size"></p>
+                        </div>
+                    </div>
+
+                    <div class="listing">
+                        <img class="favorite-icon" src="/images/empty-star-icon.png" alt="empty star">
+                        <div class="listing-text">
+                            <img class="property-image" src="images/propertyphoto2.jpeg" alt="">
+                            <h3 class="street-address"></h3>
+                            <div class="listing-details">
+                                <p class="price"></p>
+                                <p class="size"></p>
+                                <p class="bedroom-quantity"></p>
+                                <p class="bathroom-quantity"></p>
+                            </div>
+                            
+                            
+                            
+                        </div>
+                    </div>
+
+                    <div class="listing">
+                        <img class="favorite-icon" src="/images/empty-star-icon.png" alt="empty star">
+                        <div class="listing-text">
+                            <img class="property-image" src="images/propertyphoto3.jpeg" alt="">
+                            <h3 class="street-address"></h3>
+                            <p class="price"></p>
+                            <p class="bedroom-quantity"></p>
+                            <p class="bathroom-quantity"></p>
+                            <p class="size"></p>
+                        </div>
+                    </div>
+                    </div>
+    
+                </div>
+                <div class="listing-row-container">
+            
+                    <div class="listing">
+                        <img class="favorite-icon" src="/images/empty-star-icon.png" alt="empty star">
+                        <div class="listing-text">
+                            <img class="property-image" src="images/propertyphoto1.jpeg" alt="">
+                            <h3 class="street-address"></h3>
+                            <p class="price"></p>
+                            <p class="bedroom-quantity"></p>
+                            <p class="bathroom-quantity"></p>
+                            <p class="size"></p>
+                        </div>
+                    </div>
+
+                    <div class="listing">
+                        <img class="favorite-icon" src="/images/empty-star-icon.png" alt="empty star">
+                        <div class="listing-text">
+                            <img class="property-image" src="images/propertyphoto2.jpeg" alt="">
+                            <h3 class="street-address"></h3>
+                            <p class="price"></p>
+                            <p class="bedroom-quantity"></p>
+                            <p class="bathroom-quantity"></p>
+                            <p class="size"></p>
+                        </div>
+                    </div>
+
+                    <div class="listing">
+                        <img class="favorite-icon" src="/images/empty-star-icon.png" alt="empty star">
+                        <div class="listing-text">
+                            <img class="property-image" src="images/propertyphoto3.jpeg" alt="">
+                            <h3 class="street-address"></h3>
+                            <p class="price"></p>
+                            <p class="bedroom-quantity"></p>
+                            <p class="bathroom-quantity"></p>
+                            <p class="size"></p>
+                        </div>
+                    </div>
+
+                </div>
+                  
+            </div> 
+        
+            <div class="pagination">
+                <a href="">&larr;</a>
+                <a class="active" href="">1</a>
+                <a href="">2</a>
+                <a href="">3</a>
+                <a href="">4</a>
+                <a href="">5</a>
+                <a href="">6</a>
+                <a href="">&rarr;</a>
+              </div> 
+        <div>
+ </div>
+
+<div class="wave-header">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffd700" fill-opacity="1" 
+        d="M0,128L60,144C120,160,240,192,360,197.3C480,203,600,181,720,149.3C840,117,960,75,1080,58.7C1200,
+        43,1320,53,1380,58.7L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,
+        320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+</div>
+
+<div class="two-column-container">
+    <div id="resources-title-div">
+       <h1 id="resources-title">Resources</h1>
+    </div>
+    <div class="handout-container">        
+        <p class="handout-link-section">
+            <h3>Handouts</h3>
+            <ul>
+                <li><h4><a href="https://bestfriends.org/sites/default/files/2023-07/234067-PetInclusiveMaterials-OnePager-dp.pdf">Tenant's Talking Points List</a> Best Friends Animal Society</h4></li>
+                <li><h4><a href="https://www.petsandhousing.org/wp-content/uploads/2024/03/PIHI-Myth-Busting-Statistics-to-Share-with-Your-Property-Owner-or-Manager.pdf">Mythbusting Property Statistics to Share With Your Property Owner</a> Petsandhousing.org</h4></li>
+                <li><h4><a href="https://www.petsandhousing.org/wp-content/uploads/2024/03/Renters-Insurance.pdf">Renters Insurance Leads - With No Size Restrictions</a> Petsandhousing.org<h4></li>
+            </ul>
+        </p>
+        <br>
+        <p class="handout-link-section">
+            <h3>Templates</h3>
+            <ul>
+                <li><h4><a href="https://www.apartmentguide.com/blog/pet-resume/">Create Your Pet Resume: A printable fill-in pet resume generator</a> Apartmentguide.com</h4></li>
+            </ul>
+        </p>
+        <br>
+        <p class="handout-link-section">
+            <h3>Guides</h3>
+            <ul>
+                <li><h4><a href="https://bestfriends.org/pet-care-resources/pet-friendly-rentals-guide-finding-housing">Best Friends Animal Society's Housing Guide</a></h4></li>
+                <li><h4><a href="https://www.humanesociety.org/resources/information-renters-pets">Humane Society's Housing Guide</a></h4></li>
+                <li><h4><a href="https://www.peta.org/living/animal-companions/online-resources-finding-animal-friendly-housing/">Peta's Housing Guide</a></h4></li>
+                <li><h4><a href="https://www.petsandhousing.org/pet-owners/">Michelson Found Animals' Housing Guide</a></h4></li>
+            </ul>        
+        </p>
+
+    </div>
+            
+</div>
+<br><br>
+</div> 
+
+<p><a href="https://icons8.com/icon/103475/cat-footprint">Cat Foot Print</a> icon by <a href="https://icons8.com">Icons8</a></p>
+<p><a href="https://icons8.com/icon/59878/search">Magnifying Glass</a> icon by <a href="https://icons8.com">Icons8</a></p>
+<p><a href="https://icons8.com/icon/85389/star">Star</a> icon by <a href="https://icons8.com">Icons8</a></p>
+</body>
+
+</html>
+
+
+

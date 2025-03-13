@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css?v1.1"> 
+    <script type="text/javascript" src="index.js?v1.1"></script>
+</head>
+<body>
+    <div id="login-register-container">
+        <div id="login-body">
+            
+            <form id="login-form">
+                <h2 class="centered-text" id="login-heading">Login</h2>
+                <input type="text" name="username" id="username" placeholder="Username"><br> 
+                <input type="password" name="password" id="password" placeholder="Password"><br>
+                
+                    <button id="login-submit-button" type="submit">Log In</button>
+                
+                <a href="/login/facebook" class="button" id="facebook-login-button">Log In With Facebook</a>
+            </form>
+            <div class="single-item-container">
+                <p class="centered-text" id="register-link">Don't have an account? Register</p>
+            </div>
+        </div>  
+        <div id="register-body">
+            <h2 class="centered-text" id="register-heading">Register</h2>
+            
+            <form id="register-form">
+                <label for="email">Email:</label><br>
+                <input type="email" name="email" id="reg-email"><br> 
+                <label for="username">Username:</label><br>
+                <input type="text" name="username" id="reg-username"><br> 
+                <label for="password">Password:</label><br>
+                <input type="password" name="password" id="reg-password" minlength="8" required><br>
+                <div class="single-item-container">
+                    <button id="register-submit-button" type="submit">Register</button>
+                </div>
+            </form>
+            <div class="single-item-container">
+                <p class="centered-text" id="login-link">Already have an account? Login</p>
+            </div>
+        </div>  
+    </div>
+</body>
+</html>
